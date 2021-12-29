@@ -372,25 +372,25 @@ uihelper = function () {
         });
 
         if (el.type == 'file') {
-            if($.dore !== undefined){
+            if ($.dore !== undefined) {
                 return '<div class="input-group col-sm-7 ' + el.fgClass + '">' +
-                '<span class="input-group-btn">' +
-                '<span class="btn btn-default btn-file">' +
-                'Browse… <input type="' + el.type + '" name="' + el.name + '" id="' + id + '">' +
-                '</span>' +
-                '</span>' +
-                '<input type="text" value="' + el.value + '" class="form-control ' + el.class + '" readonly>' +
-                '</div>';
-            }else{
+                    '<span class="input-group-btn">' +
+                    '<span class="btn btn-default btn-file">' +
+                    'Browse… <input type="' + el.type + '" name="' + el.name + '" id="' + id + '">' +
+                    '</span>' +
+                    '</span>' +
+                    '<input type="text" value="' + el.value + '" class="form-control ' + el.class + '" readonly>' +
+                    '</div>';
+            } else {
                 return '<div class="input-group col-sm-7 ' + el.fgClass + '">' +
-                '<span class="input-group-btn">' +
-                '<span class="btn btn-default btn-file">' +
-                'Browse… <input type="' + el.type + '" name="' + el.name + '" id="' + id + '">' +
-                '</span>' +
-                '</span>' +
-                '</div>';
+                    '<span class="input-group-btn">' +
+                    '<span class="btn btn-default btn-file">' +
+                    'Browse… <input type="' + el.type + '" name="' + el.name + '" id="' + id + '">' +
+                    '</span>' +
+                    '</span>' +
+                    '</div>';
             }
-            
+
         }
         if (el.type == 'hidden')
             return '<input type="hidden" value="' + el.value + '" id="' + id + '" name = "' + el.name + '" />';
@@ -546,7 +546,7 @@ uihelper = function () {
                         beforeSubmit: sebelumSubmit
                     };
 
-                    if(opt.headers != null)
+                    if (opt.headers != null)
                         options.headers = opt.headers;
 
                     if (opt.rules) {
@@ -660,9 +660,9 @@ uihelper = function () {
             }
         };
 
-        if(opt.columnDefs != undefined)
+        if (opt.columnDefs != undefined)
             options.columnDefs = opt.columnDefs;
-            
+
         console.log("OPT CDN", options);
         var table = $(el).DataTable(options);
 

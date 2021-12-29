@@ -23,8 +23,8 @@ $config['themes']['main']['css'] = array(
 $config['themes']['icons']['css'] = array(
     array('pos' => 'head', 'src' => STATIC_PATH . 'asset/vendor/bootstrap/css/bootstrap.min.css'),
     array('pos' => 'head', 'src' => STATIC_PATH . 'asset/vendor/fontawesome/css/all.min.css'),
-    array('pos' => 'head', 'src' => STATIC_PATH . 'asset/vendor/dore/icon/iconsmind/style.css'),
-    array('pos' => 'head', 'src' => STATIC_PATH . 'asset/vendor/dore/icon/simple-line-icons/css/simple-line-icons.css')
+    array('pos' => 'head', 'src' => STATIC_PATH . 'asset/themes/dore/icon/iconsmind/style.css'),
+    array('pos' => 'head', 'src' => STATIC_PATH . 'asset/themes/dore/icon/simple-line-icons/css/simple-line-icons.css')
 );
 
 // Dore themes
@@ -66,4 +66,34 @@ $config['themes']['form']['css'] = array(
 
 $config['themes']['form']['js'] = array(
     array('pos' => 'head', 'src' => VENDOR_PATH . 'select2/dist/js/select2.min.js'),
+);
+
+$config['themes']['softui'] = array(
+    'js' => array(
+        array('pos' => 'head', 'src' => STATIC_PATH . 'asset/vendor/fontawesome/js/fontawesome.js'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/softUi/js/plugins/perfect-scrollbar.min.js'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/softUi/js/plugins/smooth-scrollbar.min.js'),
+        array('pos' => 'body:end', 'src' =>  STATIC_PATH .  'asset/themes/softUi/js/soft-ui-dashboard.min.js?v=1.0.3'),
+        array('pos' => 'body:end', 'src' =>  STATIC_PATH .  'asset/themes/softUi/js/script.js'),
+    ),
+    'css' => array(
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/softUi/css/nucleo-icons.css'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/softUi/css/nucleo-svg.css'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/softUi/css/soft-ui-dashboard.css?v=1.0.3'),
+    )
+);
+
+$config['themes']['onix'] = array(
+    'js' => array(
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/js/owl-carousel.js'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/js/animation.js'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/js/owl-carousel.js'),
+        array('pos' => 'body:end', 'src' =>  STATIC_PATH .  'asset/themes/onix/js/custom.js'),
+    ),
+    'css' => array(
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/css/fontawesome.css'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/css/templatemo-onix-digital.css'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/css/animated.css'),
+        array('pos' => 'head', 'src' =>  STATIC_PATH .  'asset/themes/onix/css/owl.css'),
+    ),
 );
